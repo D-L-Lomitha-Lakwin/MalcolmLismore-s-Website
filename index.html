@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Malcolm Lismore Photography</title>
+    
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 1s ease-out;
+            /* Smooth transition */
+            
+        }
+
+        .UserReg {
+            margin-left: 93%;
+            height: 40px;
+            width: 90px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        button:hover {
+            font-weight: bolder;
+            font-size: 14px;
+            font-style: italic;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script> // JS for auto changing wallpaper option 
+        // Array holding the file paths of local images for the background
+        const images = [
+            'land.jpeg', // First wallpaper image
+            'Wall10.jpg',
+            'Wall14.jpg',
+        ];
+
+        let currentIndex = 0; // To track the current wallpaper index
+
+        // Function to change the wallpaper
+        function changeBackground() {
+            // Change the background image to the current index in the images array
+            document.body.style.backgroundImage = `url(${images[currentIndex]})`; 
+
+            // Update the index to the next image, looping back if we reach the end
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        // Call the function immediately to set the first image
+        changeBackground();
+
+        // Automatically change the wallpaper every 5 seconds (5000 milliseconds)
+        setInterval(changeBackground, 5000); // Adjust time as needed
+    </script>
+
+
+    <div class="nav__header">
+        <div>
+            <ul class="nav__links" id="nav-links">
+                <div class="NavItems"><a href="index.html">Home</a></div>
+                <div class="NavItems"><a href="About.html">About</a></div>
+                <div class="NavItems"><a href="Packages.html">Packages</a></div>
+                <div class="NavItems">
+                    <a href="index.html">
+                        <img src="MalcolmLismoreLogo.png" alt="MalcolmLismoreLogo" class="NavLogo">
+                    </a>
+                </div>
+                <div class="NavItems"><a href="Enquiry.php">Enquiry</a></div>
+                <div class="NavItems"><a href="Gallery.html">Gallery</a></div>
+                <div class="NavItems"><a href="ContactUs.html">Contact Us</a></div>
+            </ul>
+        </div>
+    </div>
+
+    <button class="UserReg"><a href="UserReg.php">Join Us >></a></button> <!--Button for User reg-->
+
+    <div class="Content">
+        <div class="WeCapMoment"><i>~ WE CAPTURE THE MOMENTS ~</i></div>
+        <br> <!--br = break a line-->
+        <div class="WeCapMomentContentWrapper">
+            <p class="WeCapMoment__Paragraph">
+            <div class="WeCapMomentContent">
+                <b>At Capturer, we specialize in freezing those fleeting moments in time that hold immense significance
+                    for
+                    you. With our passion for photography and keen eye for detail, <br>
+                    we transform ordinary moments into
+                    extraordinary memories.
+
+                    Whether it's a milestone event, a candid portrait,<br>
+                    or the breathtaking beauty of nature, we strive to
+                    encapsulate the essence of every moment, <br>
+                    ensuring that your cherished memories last a lifetime. Trust us to
+                    capture the magic of your life's journey, one frame at a time.
+                </b>
+            </div>
+            </p>
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="Photographer2.jpg" class="PhotographerImage" alt="Photographer">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="Section_HeyThere">
+                            <div class="HEY_THERE"><b>HEY THERE,</b></div>
+                            <div>
+                                <p class="HEY_THERE_Para">
+                                    <i>I'm so happy you're here...<br>
+                                        I am a freelance photographer based on the rugged Northwest coast of Scotland.
+                                        With a deep passion for the natural world, my work primarily focuses on
+                                        capturing
+                                        the stunning Scottish landscapes, native wildlife, and coastal birds. While my
+                                        love for
+                                        nature photography is evident, my versatility allows me to also offer my skills
+                                        for
+                                        weddings, portraits, and other special events, making me a sought-after
+                                        photographer
+                                        for a range of occasions. Through my photography, I aim to showcase both the
+                                        beauty of nature and the personal moments that matter to my clients.</i>
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="FooterTable">
+                <!--<hr class="hr__line">-->
+                <table>
+                    <tr>
+                        <td><b><i>© Malcolm Lismore Photography</i></b></td>
+                        <td>
+                            <div class="Facebook">
+                                <a href="https://www.facebook.com/MalcolmLismorePhotography/">
+                                    <img src="facebook.jpeg" class="FBlogo"
+                                        alt="Icon of Facebook and Click to go to facebook page">
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr></tr>
+                    <td><i>~Northwest coast of Scotland</i></td>
+                    <td>
+                        <div class="LinkedIn"></div>
+                        <a href="https://www.linkedin.com/feed/">
+                            <img src="Linkedin.ico" class="LinInlogo"
+                                alt="Icon of LinkedIn and Click to go to LinkedIn page">
+                        </a>
+                    </td>
+
+            </div>
+            </td>
+            </tr>
+            </table>
+        </div>
+
+        <script src="main.js"></script>
+</body>
+
+</html>

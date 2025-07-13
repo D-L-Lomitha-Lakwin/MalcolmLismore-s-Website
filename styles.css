@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.nav__header {
+    display: flex; /* Aligns items horizontally */
+    justify-content: space-around; /* Adds space between each item */
+    align-items: center; /* Aligns items vertically */
+    padding: 10px;
+    background-color: #f0f0f076;
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 140px;
+    border-radius: 30px;
+}
+
+.NavItems:hover{    
+    color: red; /* Change text color on hover */
+    font-style: italic;
+    font: weight 5px;
+}
+
+.NavItems{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    margin-left: 70px;
+    margin-bottom: 3px;
+}
+
+.nav__header div {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+}
+
+.NavLogo {
+    width: 200px;
+    height: auto;
+    margin-top: -35px;
+    border-radius: 35px;
+}
+
+.WeCapMoment{       /*Topic*/   
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: x-large;
+
+}
+
+img.PhotographerImage{
+    width: 350px;
+    height: auto;
+    border-radius: 50px;
+    margin-inline: 50px; 
+    margin-top: 20px;
+    filter: brightness(1.3);
+}
+
+.Tbl_Images{
+    width: 100%;
+    height: auto;
+    padding: auto;
+    border-collapse: separate;
+}
+
+.Section_HeyThere{
+    margin-top: 50px;
+    width: 40%;
+    height: auto;
+    margin-left: 58.5%;
+    border-radius: 8px;
+    background-color: #d0f2f976;
+    backdrop-filter: blur(2px);
+    border: 2px solid #ccc; /* A light gray solid border */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+    padding: 20px;
+
+}
+
+.Intro_Gallery{
+    background-color: rgba(238, 244, 244, 0.463);
+    backdrop-filter: blur(200px);
+    border-radius: 200px;
+    width: 75%;
+    height: auto;
+    margin-left: 200px;
+    color: #090b07;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 25px;
+}
+
+.HEY_THERE_Para{
+    text-align: justify;    
+    line-height : 1.6;
+}
+
+.WeCapMomentContent{
+    text-align: center;
+    font-style: bolder;
+    line-height: 2;
+}
+
+
+.FooterTable{
+    width: 98vw; /* Full viewport width */
+    table-layout: fixed; /* Ensures the table cells maintain equal width */
+    border-top: 2px solid #02010196; /* Only show the top border */
+    border-left: none; /* Hide left border */
+    border-right: none; /* Hide right border */
+    border-bottom: none; /* Hide bottom border */
+}
+
+.Footer{
+    margin-top: 500px;
+}
+
+.hr__line{
+    width: 100%;
+    height: 1.5px;
+    border: 5px;
+    background-color: #010101;
+   
+}
+
+.FBlogo{
+    display: flex;
+    margin-left: 97%;
+    width: 35px;
+    height: auto;
+    margin-top: 5px;
+}
+
+.LinInlogo{
+    display: flex;
+    margin-left: 97%;
+    width: 35px;
+    height: auto;
+    margin-top: 5px;
+}
+
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Fixes the image in place during scrolling */
+    height: 100vh; /* Optional: Ensure the body takes up the full viewport height */
+    margin: 0; /* Optional: Removes default margin around the body */
+}
+
+header {
+    min-height: 150px;
+    background-color: rgba(50, 53, 60, 0.5); /* Black color with 50% transparency */
+    color: white; /* Text color for contrast */
+    /*url("land.jpeg")*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px); /* Blurs the background behind the div */
+}
+
+nav {
+    position: fixed;
+    isolation: isolate;
+    top: 0;
+    width: 100%;
+    /* Ensure the nav spans the entire page width */
+    margin: auto;
+    z-index: 9;
+    background-color: var(--text-dark);
+}
+
+
+.nav__links {
+    /*list-style: none;
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--text-dark);
+    transform: translateY(-100%);
+    transition: 0.5s;
+    z-index: -1;*/
+
+    list-style: none;
+    /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    /* Optional: Center align the list */
+    display: inline;
+    justify-content: center;
+}
+
+.mainList {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav__links.open {
+    transform: translateY(0);
+}
+
+.nav__links .nav__logo {
+    display: none;
+}
+
+.nav__links a {
+    padding-bottom: 5px;
+    font-weight: 500;
+    color: var(--white);
+    border-bottom: 2px solid transparent;
+}
+
+.nav__links a:hover {
+    border-color: var(--white);
+
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Malcolm Lismore Photo Gallery</title>
+</head>
+
+<style>
+    .Gall_background {
+        background-blend-mode: multiply;
+        /* Blends blue with image */
+        position: relative;
+        /* Keeps background in place while scrolling */
+        filter: brightness(1.3);
+    }
+
+    img.gallery {
+        width: 460px;
+        height: auto;
+        border-radius: 25px;
+        padding: 7px;
+        opacity: 0.5; /* Initial opacity */
+        transition: opacity 0.2s ease-in-out;  /* Transition effect */
+    }
+
+    img.gallery:hover{
+        opacity: 3; 
+    }
+
+    td {
+        text-align: center;
+    }
+
+    h3 {
+        background-color: rgba(7, 6, 6, 0.689);
+        backdrop-filter: blur(3px);
+        line-height: 40px;
+        letter-spacing: 7px;
+
+    }
+</style>
+
+<body background="PhotoGalleryWallpaper.jpeg" class="Gall_background">
+    <div class="nav__header">
+        <div>
+            <ul class="nav__links" id="nav-links">
+                <div class="NavItems"><a href="index.html">Home</a></div>
+                <div class="NavItems"><a href="About.html">About</a></div>
+                <div class="NavItems"><a href="Packages.html">Packages</a></div>
+                <div class="NavItems">
+                    <a href="index.html">
+                        <img src="MalcolmLismoreLogo.png" alt="MalcolmLismoreLogo" class="NavLogo">
+                    </a>
+                </div>
+                <div class="NavItems"><a href="Enquiry.php">Enquiry</a></div>
+                <div class="NavItems"><a href="Gallery.html">Gallery</a></div>
+                <div class="NavItems"><a href="ContactUs.html">Contact Us</a></div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="GalleryContent">
+        <div class="Malcolm_Gallery">
+            <h2 style="letter-spacing: 10px; text-align: center; color: rgb(234, 241, 242);">~Malcolm's Photo Gallery~
+            </h2>
+            <br>
+            <div class="Intro_Gallery">
+                <p style="text-align: center;">Welcome to the Photo Gallery of Malcolm Lismore Photography. <br>This
+                    gallery showcases a stunning collection of images that capture the essence of the rugged Scottish
+                    landscape, <br>its natural wildlife, and coastal beauty. From breathtaking sunsets over mountainous
+                    terrains to candid moments of native wildlife, <br>each photo tells a story of Scotland’s untamed
+                    charm.
+
+                    Explore our curated selection of landscape and wildlife photography, <br>as well as personal event
+                    shoots, including weddings and portraits. Whether you're looking for inspiration, or to relive a
+                    memory, this gallery is a visual journey through Malcolm’s artistic lens. Enjoy the moments we've
+                    captured for you!</p>
+                <br>
+            </div>
+        </div>
+        <!-------------------------------------------------------------------------->
+        <br>
+        <div class="Scott_Land">
+            <h3 style="text-align: center; color: rgb(255, 255, 255);">~Scottish Landscapes~</h3>
+            <div class="ScottWapper">
+                <table class="Tbl_Images">
+                    <tr>
+                        <td><img src="ScottWals/ScottWall1.jpeg" alt="" class="gallery"></td>
+                        <td><img src="ScottWals/ScottWall3.jpeg" alt="" class="gallery"></td>
+                        <td><img src="ScottWals/ScottWall2.jpeg" alt="" class="gallery"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="ScottWals/ScottWall4.jpeg" alt="" class="gallery"></td>
+                        <td><img src="ScottWals/ScottWall6.jpeg" alt="" class="gallery"></td>
+                        <td><img src="ScottWals/ScottWall5.jpeg" alt="" class="gallery"></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <!-------------------------------------------------------------------------->
+
+        <div class="Natural_Wild_Birds">
+            <h3 style="text-align: center; color: rgb(255, 255, 255);">~Natural Wildlife and Coastal Birds~</h3>
+            <div class="Wild_CostWrapper"></div>
+            <table class="Tbl_Images">
+                <tr>
+                    <td><img src="Natural Wildlife and Coastal Birds/WildWall2.jpeg" alt="" class="gallery"
+                            style="height: 500px; width: auto;"></td>
+                    <td><img src="Natural Wildlife and Coastal Birds/WildWall1.jpeg" alt="" class="gallery"></td>
+                    <td><img src="Natural Wildlife and Coastal Birds/WildWall3.jpeg" alt="" class="gallery"
+                            style="height: 500px; width: auto;"></td>
+                </tr>
+                <tr>
+                    <td><img src="Natural Wildlife and Coastal Birds/CosBirdWall2.jpeg" alt="" class="gallery"
+                            style="height: 500px; width: auto;"></td>
+                    <td><img src="Natural Wildlife and Coastal Birds/CosBirdWall3.jpeg" alt="" class="gallery"></td>
+                    <td><img src="Natural Wildlife and Coastal Birds/CosBirdWall1.jpeg" alt="" class="gallery"
+                            style="height: 500px; width: auto;"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------------->
+
+    <div class="Weddings">
+        <h3 style="text-align: center; color: rgb(255, 255, 255);">~Weddings~</h3>
+        <div class="WeddingWrapper"></div>
+        <table class="Tbl_Images">
+            <tr>
+                <td class="Wedding_images"><img src="Weddings/WeddingWall1.jpeg" alt="" class="gallery"
+                        style="filter: brightness(0.8);"></td>
+                <td class="Wedding_images"><img src="Weddings/WeddingWall3.jpeg" alt="" class="gallery"
+                        style="filter: brightness(0.8);"></td> 
+                <td class="Wedding_images"><img src="Weddings/WeddingWall2.jpeg" alt="" class="gallery" 
+                        style="filter: brightness(0.8);"></td>
+            </tr>
+            <tr>
+                <td class="Wedding_images"><img src="Weddings/WeddingWall5.jpeg" alt="" class="gallery"></td>
+                <td class="Wedding_images"><img src="Weddings/WeddingWall4.jpeg" alt="" class="gallery"></td>
+                <td class="Wedding_images"><img src="Weddings/WeddingWall6.jpeg" alt="" class="gallery"></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <!-------------------------------------------------------------------------->
+
+    <div class="Spec_Event">
+        <h3 style="text-align: center; color: rgb(255, 255, 255);">~Special Events~</h3>
+        <div class="SpecEventWrapper"></div>
+        <table class="Tbl_Images">
+            <tr>
+                <td><img src="Special Events/SpecWall6.jpeg" alt=""  class="gallery" style="height: 500px; width: auto;"></td>
+                <td><img src="Special Events/SpecWall1.jpeg" alt="" class="gallery"></td>
+                <td><img src="Special Events/SpecWall4.jpeg" alt="" class="gallery" style="height: 500px; width: auto;"></td>
+            </tr>
+            <tr>
+                <td><img src="Special Events/SpecWall2.jpeg" alt="" class="gallery" style="height: 400px; width: auto;"></td>
+                <td><img src="Special Events/SpecWall5.jpeg" alt="" class="gallery" style="filter: brightness(0.9);"></td>
+                <td><img src="Special Events/SpecWall3.jpeg" alt="" class="gallery" style="height: 500px; width: auto;"></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <!-------------------------------------------------------------------------->
+
+    </div>
+    <div class="FooterTable">
+        <!--<hr class="hr__line">-->
+        <table>
+            <tr>
+                <td><b><i>© Malcolm Lismore Photography</i></b></td>
+                <td>
+                    <div class="Facebook">
+                        <a href="https://www.facebook.com/MalcolmLismorePhotography/">
+                            <img src="facebook.jpeg" class="FBlogo"
+                                alt="Icon of Facebook and Click to go to facebook page">
+                        </a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr></tr>
+            <td><i>~Northwest coast of Scotland</i></td>
+            <td>
+                <div class="LinkedIn">
+                    <a href="https://www.linkedin.com/feed/">
+                        <img src="Linkedin.ico" class="LinInlogo"
+                            alt="Icon of LinkedIn and Click to go to LinkedIn page">
+                    </a>
+                </div>
+            </td>
+    </div>
+    </td>
+    </tr>
+    </table>
+    </div>
+</body>
+
+</html>
